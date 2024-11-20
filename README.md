@@ -17,14 +17,11 @@ scripts: Contiene los scripts SQL para crear los SPs, poblar la base de datos y 
 documentación: Documentación adicional, como diagramas de base de datos, ejemplos de uso y consideraciones de diseño.
 Uso:
 
-Clonar el repositorio: Utiliza git clone para obtener una copia local del repositorio.
-Crear la base de datos: Ejecuta el script de creación de la base de datos.
-Poblar la base de datos: Ejecuta el script de inserción de datos.
-Ejecutar los SPs: Utiliza SQL Server Management Studio o una herramienta similar para ejecutar los SPs con los parámetros correspondientes.
-Ejemplos de Uso:
+**Ejemplos de Uso:**
 
-SQL
+*SQL*
+-- usuarios disponibles del 1 al 4 Y las entidad de prueba son BranchOffice id = 3 y CostCenter id = 4  
 -- Obtener permisos del usuario 3 para la entidad BranchOffice con ID 3
-EXEC ObtenerPermisosUsuario 3, 'BranchOffice', 3;
+EXEC GetDynamicEntityData @id_entit = 3, @id_user = 1;
 
   
