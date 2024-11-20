@@ -21,8 +21,8 @@ Uso:
 
 *SQL*
 -- usuarios disponibles del 1 al 4 Y las entidad de prueba son BranchOffice id = 3 y CostCenter id = 4  
--- Obtener permisos del usuario 3 para la entidad BranchOffice con ID 3
+**Obtener permisos del usuario 1 para la entidad BranchOffice con ID 3**
 
-      **EXEC GetDynamicEntityData @id_entit = 3, @id_user = 1;**
+       EXEC GetDynamicEntityData @id_entit = 3, @id_user = 1;**
 
   
